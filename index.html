@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="stylus.css">
+  <script type="text/javascript" src="script.js"></script>
+    <title>Encriptador y Descriptador</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="logo">
+        <img class="logoImg" src="img/logo.png" alt="">
+        <h1 class="title">Encriptador de Mensajes</h1>
+      </div>
+
+      <div class="left">
+        <input class="textInput" id="inputTexto" type="text" placeholder="Ingrese el texto aquí">
+      </div>
+
+      <div class="right">
+        <img class="imgMuneco" src="img/muneco.png" id="imMuneco" alt="">
+
+        <h1 class="mensaje" id="ningunMensaje">Ningun mensaje fue encontrado</h1>
+
+        <textarea class="ingMenaje" id="mensajeAqui" name="name" rows="8" cols="80">Ingrese el texto que incirptar o desincriptar</textarea>
+
+        <button id="copiar" type="button" name="button" onclick="copy()">Copiar</button>
+      </div>
+      <div class="left-buttom">
+      <p> Solo minusculas y sin acentos</p>
+      <div>
+        <button class="bttn-encriptar" type="button" name="button" onclick="encriptar()">Encriptar</button>
+      
+        <button class="bttn-desencriptar" type="button" name="button" onclick="desencriptar()">Desencriptar</button>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
